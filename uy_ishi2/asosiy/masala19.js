@@ -1,9 +1,9 @@
 function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+    let sum = 0;
+    for (let i = 1; i < n; i++){
+        !(i % 2) ? sum+=i : NaN 
     }
-    return divisors
+    return sum == n ? true : false;
 }
 
-console.log(culcSum(8))
+console.log(culcSum(6))

@@ -1,9 +1,12 @@
 function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+    let zapas = n;
+    let newN = 0;
+    while(n){
+        lastDigit = n%10;
+        newN = newN * 10 + lastDigit;
+        n /= 10, n -= n%1;
     }
-    return divisors
+    return newN == zapas ? true : false
 }
 
-console.log(culcSum(8))
+console.log(culcSum(8980))

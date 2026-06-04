@@ -1,9 +1,17 @@
 function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+    let n1 = [];
+    let sum;
+    for (let i = 1; i < n; i++){
+        sum = 0;
+        let a = i;
+        while (a){               
+            lastdigit = a%10;
+            sum += lastdigit;
+            a = a/10, a -= a%1;   
+        }
+        (sum == 10) ? n1.push(i) : NaN
     }
-    return divisors
+    return n1;
 }
 
-console.log(culcSum(8))
+console.log(culcSum(90))

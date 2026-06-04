@@ -1,9 +1,15 @@
 function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+    onestr = ""
+    for (value of Object.values(n)){
+        typeof value == typeof "" ? onestr += value : NaN
     }
-    return divisors
+    return onestr;
 }
 
-console.log(culcSum(8))
+obj = {
+name: "Ali",
+age: "20",
+score: 95
+}
+
+console.log(culcSum(obj))
