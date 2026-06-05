@@ -1,12 +1,8 @@
 const account = {
   balance: 500000,
   canWithdraw(amount) {
-    if (this.balance > amount) {
-      return true;
-    } else {
-      return false;
-    }
-  },
+    return this.balance >= amount;
+  }
 };
 
-console.log(account.canWithdraw(400000));
+console.log(account.canWithdraw(500001));

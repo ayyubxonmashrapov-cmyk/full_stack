@@ -1,5 +1,5 @@
-let n = 47;
+let n = 47412429;
 
-let result = Math.round(n / 10) * 10;
+let result = (n/10).toFixed() * 10
 
 console.log(result);

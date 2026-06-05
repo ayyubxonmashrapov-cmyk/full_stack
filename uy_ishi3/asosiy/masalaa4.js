@@ -3,12 +3,8 @@ const team = {
   draws: 4,
   losses: 2,
   getPoints() {
-    if (this.wins) {
-      return `G'alaba: ${this.wins * 3} BALL`;
-    } else if (this.draws) {
-      return `Durrang: ${this.draws * 1} BALL`;
-    }
-  },
+    return `${this.wins * 3 + this.draws * 1} ball`
+  }
 };
 
 
