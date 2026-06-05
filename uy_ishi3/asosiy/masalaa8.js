@@ -1,12 +1,8 @@
 const user = {
-  password: "12345678",
+  password: "125wer678",
   isStrongPassword() {
-    if (this.password.length >= 8) {
-      return true;
-    } else {
-      return false;
-    }
-  },
+    return this.password.length >= 8
+  }
 };
 
 console.log(user.isStrongPassword());
