@@ -1,7 +1,7 @@
 function mostLatter(text){
     const latters = {};
 
-    for (latter of text.split("")){
+    for (let latter of text.split("")){
         if (latter in latters){
             latters[latter] += 1;
         } else {
