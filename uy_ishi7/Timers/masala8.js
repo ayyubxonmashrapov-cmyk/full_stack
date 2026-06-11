@@ -1,9 +1,8 @@
-let i = 10;
+let i = 0;
 
 const timer = setInterval(() => {
-  console.log(i--);
-
-  if (i === 0) {
+  console.log((`${i += 10}%`));
+  if (i === 100) {
     clearInterval(timer);
   }
 }, 1000);
