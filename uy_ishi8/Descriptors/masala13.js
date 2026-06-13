@@ -18,4 +18,4 @@ const employee = {
     id: 1
 }
 
-console.log(getWritables(employee))
+console.log(getWritables(temperature))

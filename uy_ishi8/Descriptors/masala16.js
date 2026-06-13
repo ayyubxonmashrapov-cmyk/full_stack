@@ -6,13 +6,13 @@ function showPropertyDescriptors(obj){
     return result
 }
 
-const user = {
+const book = {
     id: 1,
     username: "name",
     password: "parol123"    
 };
 
-Object.defineProperty(user, 'password', {enumerable: false});
+Object.defineProperty(book, 'password', {enumerable: false});
 
 
-console.log(showPropertyDescriptors(user))
+console.log(showPropertyDescriptors(book))

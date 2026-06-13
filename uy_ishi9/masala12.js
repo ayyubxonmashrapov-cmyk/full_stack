@@ -17,4 +17,4 @@ class Mage extends Character {
 
 const user = new Mage("aoao", 120);
 
-console.log(user.getSpellPower())
+console.log(book.getSpellPower())

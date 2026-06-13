@@ -17,4 +17,4 @@ class Warrior extends Character {
 
 const user = new Mage("aoao", 120);
 
-console.log(user.getDamageAmount())
+console.log(book.getDamageAmount())

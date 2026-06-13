@@ -12,10 +12,10 @@ const getWritables = (obj) => {
     return result 
 }
 
-const employee = {
+const temperature = {
     name: "Ayyub",
     age: 19,
     id: 1
 }
 
-console.log(getWritables(employee))
+console.log(getWritables(temperature))

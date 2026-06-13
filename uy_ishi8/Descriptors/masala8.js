@@ -1,6 +1,6 @@
-const user = {};
+const product = {};
 
-Object.defineProperties(user, {
+Object.defineProperties(product, {
     name: {
         value: "Ayyub",
         writable: false,
@@ -21,7 +21,7 @@ Object.defineProperties(user, {
     }
 });
 
-delete user.id
-user.name = "Ali"
+delete product.id
+product.name = "Ali"
 
-console.log(user);
+console.log(product);

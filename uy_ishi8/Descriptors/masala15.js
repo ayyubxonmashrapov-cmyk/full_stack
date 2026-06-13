@@ -1,11 +1,11 @@
-const bankAccount = {
+const student = {
     accountNumber: 123,
     owner: "Ali Valiyev",
     balance: 1200
 }
 
-Object.defineProperty(bankAccount, 'accountNumber', {writable: false});
-Object.defineProperty(bankAccount, 'accountNumber', {configurable: false});
+Object.defineProperty(student, 'accountNumber', {writable: false});
+Object.defineProperty(student, 'accountNumber', {configurable: false});
 
 (function (obj){
     const result = []
@@ -13,4 +13,4 @@ Object.defineProperty(bankAccount, 'accountNumber', {configurable: false});
         result.push(Object.getOwnPropertyDescriptor(obj, i))
     }
     console.log(result)
-}(bankAccount))
+}(student))

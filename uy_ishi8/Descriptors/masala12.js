@@ -12,5 +12,5 @@ const employee = {
     id: 1
 }
 
-console.log(showPropertyDescriptors(employee))
+console.log(showPropertyDescriptors(temperature))
 
