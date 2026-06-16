@@ -1,9 +1,14 @@
-function culcSum(n) {
-    let divisors = []
+function sonliUchburchak(n){
+    let result = '';
     for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+        let qator = '';
+        for (let j = 1; j <= i; j++){
+            qator += `${j}`;
+        }
+        result += qator;
+        result += '\n'
     }
-    return divisors
+    return result
 }
 
-console.log(culcSum(8))
+console.log(sonliUchburchak(15))

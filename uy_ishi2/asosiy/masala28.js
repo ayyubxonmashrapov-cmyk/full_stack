@@ -1,9 +1,31 @@
-function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
+function mostAndWorsePrice(obj){
+    let maxP = Object.entries(obj)[0];
+
+    for (let i of Object.entries(obj)){
+        if (i[1] > maxP[1]){
+            maxP = i
+        }
     }
-    return divisors
+
+    let minP = maxP;
+
+    for (let i of Object.entries(obj)){
+        if (i[1] < minP[1]){
+            minP = i
+        }
+    }
+
+    return [maxP, minP]
 }
 
-console.log(culcSum(8))
+
+const products = {
+    laptop: 1200,
+    phone: 800,
+    monitor: 350,
+    keyboard: 70,
+    mouse: 40,
+    headphones: 150
+};
+
+console.log(mostAndWorsePrice(products))

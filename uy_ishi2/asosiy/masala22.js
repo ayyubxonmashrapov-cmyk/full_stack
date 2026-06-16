@@ -1,9 +1,20 @@
-function culcSum(n) {
-    let divisors = []
-    for (let i = 1; i <= n; i++){
-        !(n % i) ? divisors.push(i) : NaN
-    }
-    return divisors
+function mostFrequentValue(obj) {
+  const values = Object.values(obj);
+  const counts = {};
+
+  for (const val of values) {
+    counts[val] = (counts[val] || 0) + 1;
+  }
+
+  return Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
 }
 
-console.log(culcSum(8))
+const obj = {
+    a: 5,
+    b: 7,
+    c: 5,
+    d: 9,
+    e: 5
+}
+
+console.log(mostFrequentValue(obj))
