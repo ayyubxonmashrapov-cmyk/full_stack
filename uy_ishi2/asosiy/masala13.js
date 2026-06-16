@@ -7,3 +7,5 @@ function culcSum(n) {
 }
 
 console.log(culcSum(12))
+
+
